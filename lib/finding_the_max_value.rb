@@ -6,7 +6,7 @@ def find_max_value(array)
   count = 0 #start loop at zero
   max_value = -1 #assign lowest possible value
     while count < array.length do #loop over whole array
-      if max_value < array[count] #starts at -1, which will always be the least.  becomes value reassigned below.
+      if max_value < array[count] #starts at -1, which will always be the least.  becomes value reassigned below only if value is less than element.
         max_value = array[count] #new variable is reassigned to new element, and holds at this value until the next loop
       end
     count += 1
